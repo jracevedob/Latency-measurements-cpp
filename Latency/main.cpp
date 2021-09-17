@@ -49,7 +49,7 @@
 ******************************************************************************/
 
 /***************************** Include Files *********************************/
-
+/***************************** Linux include *********************************/
 #include <linux/module.h>
 #include <linux/kernel.h>
 #include <linux/init.h>
@@ -57,10 +57,24 @@
 #include <linux/preempt.h> 
 #include <linux/sched.h> 
 
+/***************************** Program include library ***********************/
+#include <iostream>
+#include <string>
+
 /************************** Constant Definitions *****************************/
+#define SIZE_OF_STAT 100000
+#define BOUND_OF_LOOP 1000
+#define UINT64_MAX (18446744073709551615ULL)
 
 /**************************** Type Definitions *******************************/
 
 /***************** Macros (Inline Functions) Definitions *********************/
 
 /************************** Function Prototypes ******************************/
+
+
+int main(int argc, char ** argv[]){
+
+    std::cout<<"This is a test"<<endl;
+    return 0;
+}
